@@ -1,0 +1,7 @@
+#gameWord {
+    letter-spacing: 0.5em;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+}
