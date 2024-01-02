@@ -17,10 +17,24 @@
 }
 #textArea {
     display: flex;
+}
+#textButtons {
+    display: flex;
     width: 240px;
     padding: 1em;
     flex-wrap: wrap;
     justify-content: center;
+}
+#gameOver {
+    margin: 10px 10px 10px 4em;
+}
+#resetArea {
+    display: flex;
+    width: 275px;
+    justify-content: center;
+}
+#reset {
+    
 }
 .letterButton {
     padding: 0.4em;
