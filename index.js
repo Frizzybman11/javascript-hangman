@@ -31,7 +31,6 @@ letterButton.forEach((button) => {
             gameWord.textContent = wordArray[0]
             gameStrikes.textContent = "Strikes: " + strikeCount
             button.disabled = true;
-            console.log(hiddenWord)
             if (wordArray[0] == wordArray[1]){
                 gameStatus = "Complete"
                 gameOver.textContent = "You win!"
