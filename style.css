@@ -1,7 +1,28 @@
 #gameWord {
     letter-spacing: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gameStrikes {
+    margin-left: auto;
 }
 #main {
     display: flex;
     flex-direction: column;
+}
+#gameArea {
+    display: flex;
+    justify-content: center;
+    width: 25em;
+}
+#textArea {
+    display: flex;
+    width: 240px;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.letterButton {
+    padding: 0.4em;
+    margin: 0.1em;
 }
