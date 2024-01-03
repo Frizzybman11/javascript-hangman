@@ -22,7 +22,7 @@ const gameWord = document.querySelector("#gameWord")
 const gameStrikes = document.querySelector("#gameStrikes")
 
 gameWord.textContent = wordArray[0]
-gameStrikes.textContent = "Strikes: 0"
+gameStrikes.textContent = "Strikes: 0 / 10"
 let hiddenWord = ""
 
 letterButton.forEach((button) => {
@@ -31,7 +31,7 @@ letterButton.forEach((button) => {
             letter = button.id;
             hiddenWord = playerGuess(letter, wordArray)
             gameWord.textContent = wordArray[0]
-            gameStrikes.textContent = "Strikes: " + strikeCount
+            gameStrikes.textContent = "Strikes: " + strikeCount + " / 10"
             button.disabled = true;
             if (wordArray[0] == wordArray[1]){
                 gameStatus = "Complete"
@@ -54,7 +54,7 @@ reset.addEventListener('click', () => {
     strikeCount = 0
     wordArray = getWord()
     gameWord.textContent = wordArray[0]
-    gameStrikes.textContent = "Strikes: 0"
+    gameStrikes.textContent = "Strikes: 0 / 10"
     let hiddenWord = ""
     textArea.removeChild(gameOver)
     resetArea.removeChild(reset)
