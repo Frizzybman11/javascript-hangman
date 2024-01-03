@@ -1,10 +1,11 @@
 #gameWord {
     letter-spacing: 0.5em;
-    margin-top: 2em;
     font-size: 2em;
+    margin-bottom: 2em;
 }
 #gameStrikes {
-    font-size: 1.5em;
+    margin-bottom: 2em;
+    font-size: 2em;
 }
 #main {
     display: flex;
@@ -20,7 +21,6 @@
 }
 #textArea {
     display: flex;
-    margin-top: 1.5em;
 }
 #textButtons {
     display: flex;
@@ -30,8 +30,9 @@
     justify-content: center;
 }
 #gameOver {
-    margin-top: 2em;
+    height: 1em;
     font-size: 1.2em;
+    margin-bottom: 1.5em;
 }
 #resetArea {
     display: flex;

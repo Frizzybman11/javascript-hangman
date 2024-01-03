@@ -7,8 +7,7 @@ const wordLibrary = ['amber', 'aromas', 'autumn', 'blood', 'bonfire', 'bounty', 
 
 const gameArea = document.querySelector('#gameArea')
 
-const gameOver = document.createElement('span');
-gameOver.id = "gameOver"
+const gameOver = document.querySelector('#gameOver');
 
 const reset = document.createElement('button');
 reset.textContent = "Play Again";
@@ -36,13 +35,11 @@ letterButton.forEach((button) => {
             if (wordArray[0] == wordArray[1]){
                 gameStatus = "Complete"
                 gameOver.textContent = "You win!"
-                gameArea.appendChild(gameOver)
                 resetArea.appendChild(reset)
             }
             if (strikeCount == 10){
                 gameStatus = "Complete"
                 gameOver.textContent = "You lose! The word was '" + wordArray[1] + "'"
-                gameArea.appendChild(gameOver)
                 resetArea.appendChild(reset)
             } 
         }
@@ -56,7 +53,7 @@ reset.addEventListener('click', () => {
     gameWord.textContent = wordArray[0]
     gameStrikes.textContent = "Strikes: 0 / 10"
     let hiddenWord = ""
-    gameArea.removeChild(gameOver)
+    gameOver.textContent = ""
     resetArea.removeChild(reset)
     for (button of letterButton){
         button.disabled = false;
