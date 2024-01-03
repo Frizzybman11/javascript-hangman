@@ -53,4 +53,11 @@
 .letterButton {
     padding: 1em;
     margin: 0.5em;
+    font-weight: bold;
+}
+.rightChoice {
+    background-color: greenyellow;
+}
+.wrongChoice {
+    background-color: lightcoral;
 }

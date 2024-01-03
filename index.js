@@ -34,6 +34,12 @@ letterButton.forEach((button) => {
             gameWord.textContent = wordArray[0]
             gameStrikes.textContent = "Strikes: " + strikeCount + " / 10"
             button.disabled = true;
+            if (wordArray[2] == "right"){
+                button.classList.add("rightChoice")
+            }
+            else if (wordArray[2] == "wrong"){
+                button.classList.add("wrongChoice")
+            }
             if (wordArray[0] == wordArray[1]){
                 gameStatus = "Complete"
                 gameOver.textContent = "You win!"
@@ -59,6 +65,8 @@ reset.addEventListener('click', () => {
     reset.style.visibility = "hidden"
     for (button of letterButton){
         button.disabled = false;
+        button.classList.remove("rightChoice")
+        button.classList.remove("wrongChoice")
     }
 })
 
@@ -87,6 +95,10 @@ function playerGuess(letter, wordArray) {
     hiddenWord = hiddenWord.join("")
     if (oldhiddenWord == hiddenWord){
         strikeCount += 1;
+        wordArray[2] = "wrong"
+    }
+    else {
+        wordArray[2] = "right"
     }
     wordArray[0] = hiddenWord
     return wordArray
