@@ -14,6 +14,8 @@ reset.textContent = "Play Again";
 reset.id = "reset"
 
 const resetArea = document.querySelector('#resetArea')
+resetArea.appendChild(reset)
+reset.style.visibility = "hidden"
 
 //Hangman Game
 let wordArray = getWord()
@@ -35,12 +37,12 @@ letterButton.forEach((button) => {
             if (wordArray[0] == wordArray[1]){
                 gameStatus = "Complete"
                 gameOver.textContent = "You win!"
-                resetArea.appendChild(reset)
+                reset.style.visibility = "visible"
             }
             if (strikeCount == 10){
                 gameStatus = "Complete"
                 gameOver.textContent = "You lose! The word was '" + wordArray[1] + "'"
-                resetArea.appendChild(reset)
+                reset.style.visibility = "visible"
             } 
         }
     })
@@ -54,7 +56,7 @@ reset.addEventListener('click', () => {
     gameStrikes.textContent = "Strikes: 0 / 10"
     let hiddenWord = ""
     gameOver.textContent = ""
-    resetArea.removeChild(reset)
+    reset.style.visibility = "hidden"
     for (button of letterButton){
         button.disabled = false;
     }

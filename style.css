@@ -2,15 +2,20 @@
     letter-spacing: 0.5em;
     font-size: 2em;
     margin-bottom: 2em;
+    padding: 1em;
+    background-color: white;
 }
 #gameStrikes {
     margin-bottom: 2em;
+    margin-top: 0.5em;
     font-size: 2em;
+    background-color: lightcoral;
 }
 #main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: lightgray;
 }
 #gameArea {
     display: flex;
@@ -28,6 +33,7 @@
     padding: 1em;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: gray;
 }
 #gameOver {
     height: 1em;
@@ -41,6 +47,8 @@
 }
 #reset {
     padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;;
 }
 .letterButton {
     padding: 1em;
