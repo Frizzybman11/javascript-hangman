@@ -41,7 +41,7 @@ letterButton.forEach((button) => {
             }
             if (strikeCount == 10){
                 gameStatus = "Complete"
-                gameOver.textContent = "You lose!"
+                gameOver.textContent = "You lose! The word was '" + wordArray[1] + "'"
                 gameArea.appendChild(gameOver)
                 resetArea.appendChild(reset)
             } 
