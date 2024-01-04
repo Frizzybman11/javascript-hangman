@@ -3,7 +3,13 @@ let strikeCount = 0;
 
 const letterButton = document.querySelectorAll(".letterButton")
 
-const wordLibrary = ['amber', 'aromas', 'autumn', 'blood', 'bonfire', 'bounty', 'brisk', 'broomstick', 'candle', 'candy', 'carving', 'chestnuts', 'chili', 'chilly', 'cider', 'cinnamon', 'cornstalk', 'cornucopia', 'costume', 'cranberry', 'creepy', 'crisp', 'crunching', 'disguise', 'equinox', 'family', 'fangs', 'feast', 'festival', 'foliage', 'frosty', 'gathering', 'generous', 'ghost', 'ghoulish', 'goblin', 'golden', 'gourds', 'grandparents', 'graveyard', 'gravy', 'halloween', 'harvest', 'haunted', 'hayride', 'holiday', 'inviting', 'kernel', 'maize', 'monster', 'mummy', 'november', 'october', 'orchard', 'parade', 'party', 'pirate', 'plenty', 'prince', 'princess', 'pumpkin', 'raking', 'roasting', 'rustling', 'savory', 'scarecrow', 'scary', 'season', 'september', 'skeleton', 'skull', 'slimy', 'spicy', 'spooky', 'sweater', 'thankful', 'thanksgiving', 'trail', 'turkey', 'vampire', 'vibrant', 'werewolf', 'wicked', 'witch', 'zombie']
+//Autumn Words
+//const wordLibrary = ['amber', 'aromas', 'autumn', 'blood', 'bonfire', 'bounty', 'brisk', 'broomstick', 'candle', 'candy', 'carving', 'chestnuts', 'chili', 'chilly', 'cider', 'cinnamon', 'cornstalk', 'cornucopia', 'costume', 'cranberry', 'creepy', 'crisp', 'crunching', 'disguise', 'equinox', 'family', 'fangs', 'feast', 'festival', 'foliage', 'frosty', 'gathering', 'generous', 'ghost', 'ghoulish', 'goblin', 'golden', 'gourds', 'grandparents', 'graveyard', 'gravy', 'halloween', 'harvest', 'haunted', 'hayride', 'holiday', 'inviting', 'kernel', 'maize', 'monster', 'mummy', 'november', 'october', 'orchard', 'parade', 'party', 'pirate', 'plenty', 'prince', 'princess', 'pumpkin', 'raking', 'roasting', 'rustling', 'savory', 'scarecrow', 'scary', 'season', 'september', 'skeleton', 'skull', 'slimy', 'spicy', 'spooky', 'sweater', 'thankful', 'thanksgiving', 'trail', 'turkey', 'vampire', 'vibrant', 'werewolf', 'wicked', 'witch', 'zombie']
+
+//Winter Words
+const wordLibrary = ['boots', 'coats', 'evergreen', 'freezing', 'gloves', 'hibernation', 'holly', 'cocoa', 'skating', 'icicles', 'igloo', 'mittens', 'polar', 'reindeer', 'scarf', 'skiing', 'sleigh', 'snowball', 'snowman', 'snowsuit', 'sweater', 'winter', 'arctic', 'beanie', 'bells', 'bitter', 'blanket', 'blizzard', 'bonfire', 'brisk', 'chilly', 'christmas', 'curling', 'december', 'decorations', 'eggnog', 'february', 'festive', 'fireplace', 'firewood', 'flannel', 'fleece', 'flurries', 'frigid', 'frostbite', 'frosty', 'frozen', 'fruitcake', 'furnace', 'gingerbread', 'glacier', 'glittering', 'hailstone', 'hockey', 'hoodie', 'hypothermia', 'iceberg', 'january', 'mocha', 'ornament', 'penguin', 'parka', 'shivering', 'shoveling', 'sledding', 'slippery', 'slushy', 'snowboard', 'snowfall', 'snowflake', 'snowplow', 'snowstorm', 'stockings', 'turtleneck', 'valentine', 'whiteout']
+
+wordLibrary.sort()
 
 const gameArea = document.querySelector('#gameArea')
 
