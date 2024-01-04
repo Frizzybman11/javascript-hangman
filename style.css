@@ -4,25 +4,35 @@
     margin-bottom: 2em;
     padding: 1em;
     background-color: white;
+    border-radius: 1em;
 }
 #gameStrikes {
     margin-bottom: 2em;
     margin-top: 0.5em;
     font-size: 2em;
     background-color: white;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 1px;
+}
+body {
+    display: flex;
+    justify-content: center;
 }
 #main {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: lightgray;
+    width: 50em;
+    border-radius: 1em;
+    border-style: solid;
 }
 #gameArea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    
+    text-align: center;  
 }
 #textArea {
     display: flex;
@@ -34,6 +44,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: gray;
+    border-radius: 1em;
 }
 #gameOver {
     height: 1em;
@@ -49,11 +60,15 @@
     padding: 1em;
     margin-top: 1em;
     margin-bottom: 1em;;
+    border-radius: 0.5em;
 }
 .letterButton {
     padding: 1em;
     margin: 0.5em;
+    width: 3em;
+    height: 3.5em;
     font-weight: bold;
+    border-radius: 0.5em;
 }
 .rightChoice {
     background-color: greenyellow;
