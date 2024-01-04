@@ -39,7 +39,7 @@ body {
 }
 #textButtons {
     display: flex;
-    width: 400px;
+    width: 25em;
     padding: 1em;
     flex-wrap: wrap;
     justify-content: center;
