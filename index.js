@@ -42,11 +42,13 @@ letterButton.forEach((button) => {
             }
             if (wordArray[0] == wordArray[1]){
                 gameStatus = "Complete"
+                gameWord.style.backgroundColor = "greenyellow"
                 gameOver.textContent = "You win!"
                 reset.style.visibility = "visible"
             }
             if (strikeCount == 10){
                 gameStatus = "Complete"
+                gameStrikes.style.backgroundColor = "lightcoral"
                 gameOver.textContent = "You lose! The word was '" + wordArray[1] + "'"
                 reset.style.visibility = "visible"
             } 
@@ -59,7 +61,9 @@ reset.addEventListener('click', () => {
     strikeCount = 0
     wordArray = getWord()
     gameWord.textContent = wordArray[0]
+    gameWord.style.backgroundColor = "white"
     gameStrikes.textContent = "Strikes: 0 / 10"
+    gameStrikes.style.backgroundColor = "white"
     let hiddenWord = ""
     gameOver.textContent = ""
     reset.style.visibility = "hidden"
