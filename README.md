@@ -7,3 +7,5 @@ Now updated with a combined Spring and Summer word library.
 * If your guess is correct, the letter will appear in the hidden word.
 * If your guess is incorrect, you will receive a strike.
 * Correctly guess the word before your strike count reaches 10 to win!
+
+Click here to play: https://frizzybman11.github.io/javascript-hangman/
